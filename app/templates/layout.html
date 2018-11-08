@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <meta name="description" content="I'm a nerd from California." >
+    <meta name="viewport" content="width=device-width,initial-scale=1" >
+    <title> Joshua Cook | Nerd </title>
+    <link rel="stylesheet" media="screen, projection" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+    <link href='//fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+    <link rel="icon" href="favicon.ico" >
+    <meta property="og:title" content="Joshua Cook - Nerd">
+    <meta property="og:url" content="http://joshuacook.me">
+    <meta property="og:site_name" content="Joshua Cook - Nerd">
+    <meta property="og:type" content="website">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"  ></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="center">
+        <div id="content">{% block content %}{% endblock %}</div>
+        <div class="footer">
+          <div class="small">
+              <a href="https://hub.docker.com/u/joshuacook/">docker </a>|
+              <a href="http://github.com/joshuacook">github </a>|
+              <a href="http://www.apress.com/us/book/9781484230114#aboutAuthors">apress </a>|
+              <a href="https://www.linkedin.com/in/joshuapaulcook">linkedin </a>|
+              <a href="http://stackoverflow.com/users/1081801/joshua-cook">stack </a>|
+              <a href="http://twitter.com/joshuacook">twitter </a>|
+            me at joshuacook dot me
+            <br />
+            © 2018 all rights reserved
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="scripts"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='jquery.terminal.js') }}"></script>
+    <script src="{{ url_for('static', filename='terminal_start.js') }}"></script>
+    <script src="{{ url_for('static', filename='google_analytics.js') }}"></script>
+  </body>
+</html>
